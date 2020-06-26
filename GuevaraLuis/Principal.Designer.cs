@@ -28,20 +28,60 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.btnCarro = new System.Windows.Forms.Button();
+            this.btnParqueo = new System.Windows.Forms.Button();
+            this.btnCliente = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // Form1
+            // btnCarro
+            // 
+            this.btnCarro.Location = new System.Drawing.Point(83, 171);
+            this.btnCarro.Name = "btnCarro";
+            this.btnCarro.Size = new System.Drawing.Size(81, 39);
+            this.btnCarro.TabIndex = 0;
+            this.btnCarro.Text = "Carro";
+            this.btnCarro.UseVisualStyleBackColor = true;
+            this.btnCarro.Click += new System.EventHandler(this.btnCarro_Click);
+            // 
+            // btnParqueo
+            // 
+            this.btnParqueo.Location = new System.Drawing.Point(325, 278);
+            this.btnParqueo.Name = "btnParqueo";
+            this.btnParqueo.Size = new System.Drawing.Size(81, 39);
+            this.btnParqueo.TabIndex = 1;
+            this.btnParqueo.Text = "Parqueo";
+            this.btnParqueo.UseVisualStyleBackColor = true;
+            this.btnParqueo.Click += new System.EventHandler(this.btnParqueo_Click);
+            // 
+            // btnCliente
+            // 
+            this.btnCliente.Location = new System.Drawing.Point(649, 171);
+            this.btnCliente.Name = "btnCliente";
+            this.btnCliente.Size = new System.Drawing.Size(81, 39);
+            this.btnCliente.TabIndex = 2;
+            this.btnCliente.Text = "Cliente";
+            this.btnCliente.UseVisualStyleBackColor = true;
+            this.btnCliente.Click += new System.EventHandler(this.btnCliente_Click);
+            // 
+            // Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Name = "Form1";
+            this.Controls.Add(this.btnCliente);
+            this.Controls.Add(this.btnParqueo);
+            this.Controls.Add(this.btnCarro);
+            this.Name = "Principal";
             this.Text = "Principal";
             this.ResumeLayout(false);
 
         }
 
         #endregion
+
+        private System.Windows.Forms.Button btnCarro;
+        private System.Windows.Forms.Button btnParqueo;
+        private System.Windows.Forms.Button btnCliente;
     }
 }
 

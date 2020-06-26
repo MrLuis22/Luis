@@ -73,6 +73,7 @@
     <Compile Include="Cliente.Designer.cs">
       <DependentUpon>Cliente.cs</DependentUpon>
     </Compile>
+    <Compile Include="Conexion_db.cs" />
     <Compile Include="Parqueo.cs">
       <SubType>Form</SubType>
     </Compile>
