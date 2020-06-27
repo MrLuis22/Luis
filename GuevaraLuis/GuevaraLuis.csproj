@@ -61,6 +61,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Busqueda_Carro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Busqueda_Carro.Designer.cs">
+      <DependentUpon>Busqueda_Carro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Busqueda_Cliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Busqueda_Cliente.Designer.cs">
+      <DependentUpon>Busqueda_Cliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Busqueda_Parqueo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Busqueda_Parqueo.Designer.cs">
+      <DependentUpon>Busqueda_Parqueo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Carro.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -88,6 +106,24 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Busqueda_Carro.resx">
+      <DependentUpon>Busqueda_Carro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Busqueda_Cliente.resx">
+      <DependentUpon>Busqueda_Cliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Busqueda_Parqueo.resx">
+      <DependentUpon>Busqueda_Parqueo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Carro.resx">
+      <DependentUpon>Carro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cliente.resx">
+      <DependentUpon>Cliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Parqueo.resx">
+      <DependentUpon>Parqueo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Principal.resx">
       <DependentUpon>Principal.cs</DependentUpon>
     </EmbeddedResource>

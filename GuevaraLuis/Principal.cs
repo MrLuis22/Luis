@@ -37,5 +37,10 @@ namespace GuevaraLuis
             Parqueo Parqueo = new Parqueo();
             Parqueo.Show();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Program.Principal.Close();
+        }
     }
 }
