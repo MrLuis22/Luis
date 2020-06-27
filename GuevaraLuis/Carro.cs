@@ -42,7 +42,7 @@ namespace GuevaraLuis
         void actualizarDs()
         {
             tbl = objConexion.obtener_datos().Tables["tbl_vehiculos"];
-            tbl.PrimaryKey = new DataColumn[] { tbl.Columns["tbl_vehiculos"] };
+            tbl.PrimaryKey = new DataColumn[] { tbl.Columns["IdVehiculo"] };
         }
 
         void mostrarDatos()

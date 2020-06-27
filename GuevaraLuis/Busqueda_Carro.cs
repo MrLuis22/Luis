@@ -28,7 +28,7 @@ namespace GuevaraLuis
         {
             BindingSource bs = new BindingSource();
             bs.DataSource = GrdBusquedaCarro.DataSource;
-            bs.Filter = "(Modelo   + Marca + Año +) like '%" + valor + "%'";
+                bs.Filter = "(Modelo   + Marca + Año + Tipo + Placa) like '%" + valor + "%'";
             GrdBusquedaCarro.DataSource = bs;
 
         }
