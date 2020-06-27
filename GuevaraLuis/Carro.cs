@@ -62,7 +62,7 @@ namespace GuevaraLuis
             }
             catch (Exception ex)
             {
-                MessageBox.Show("No hay Datos que mostrar", "Registros de Cliente",
+                MessageBox.Show("No hay Datos que mostrar", "Registros de Vehiculo",
                     MessageBoxButtons.OK, MessageBoxIcon.Information);
                 limpiar_cajas();
             }
@@ -188,7 +188,7 @@ namespace GuevaraLuis
 
         private void BtnDelete_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Esta seguro de eliminar a " + TxtMarca.Text, "Registro de Clientes",
+            if (MessageBox.Show("Esta seguro de eliminar a " + TxtMarca.Text, "Registro de Vehiculos",
                MessageBoxButtons.YesNo, MessageBoxIcon.Error) == DialogResult.Yes)
             {
                 String[] valores = { lblidvehiculo.Text };

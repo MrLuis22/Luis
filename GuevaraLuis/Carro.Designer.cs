@@ -28,7 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Carro));
             this.GrbDatosCarro = new System.Windows.Forms.GroupBox();
+            this.TxtTipo = new System.Windows.Forms.TextBox();
+            this.lblTipo = new System.Windows.Forms.Label();
             this.TxtPlaca = new System.Windows.Forms.TextBox();
             this.TxtAño = new System.Windows.Forms.TextBox();
             this.TxtModelo = new System.Windows.Forms.TextBox();
@@ -51,8 +54,6 @@
             this.BtnModificar = new System.Windows.Forms.Button();
             this.BtnNuevo = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.lblTipo = new System.Windows.Forms.Label();
-            this.TxtTipo = new System.Windows.Forms.TextBox();
             this.GrbDatosCarro.SuspendLayout();
             this.GrbNavegacion.SuspendLayout();
             this.grbEdicion.SuspendLayout();
@@ -60,6 +61,8 @@
             // 
             // GrbDatosCarro
             // 
+            this.GrbDatosCarro.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("GrbDatosCarro.BackgroundImage")));
+            this.GrbDatosCarro.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.GrbDatosCarro.Controls.Add(this.TxtTipo);
             this.GrbDatosCarro.Controls.Add(this.lblTipo);
             this.GrbDatosCarro.Controls.Add(this.TxtPlaca);
@@ -77,6 +80,23 @@
             this.GrbDatosCarro.TabIndex = 1;
             this.GrbDatosCarro.TabStop = false;
             this.GrbDatosCarro.Enter += new System.EventHandler(this.GrbDatosCarro_Enter);
+            // 
+            // TxtTipo
+            // 
+            this.TxtTipo.Location = new System.Drawing.Point(162, 225);
+            this.TxtTipo.Name = "TxtTipo";
+            this.TxtTipo.Size = new System.Drawing.Size(100, 20);
+            this.TxtTipo.TabIndex = 23;
+            // 
+            // lblTipo
+            // 
+            this.lblTipo.AutoSize = true;
+            this.lblTipo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTipo.Location = new System.Drawing.Point(26, 225);
+            this.lblTipo.Name = "lblTipo";
+            this.lblTipo.Size = new System.Drawing.Size(36, 13);
+            this.lblTipo.TabIndex = 22;
+            this.lblTipo.Text = "Tipo:";
             // 
             // TxtPlaca
             // 
@@ -165,6 +185,7 @@
             this.GrbNavegacion.Controls.Add(this.Btnsiguiente);
             this.GrbNavegacion.Controls.Add(this.Btnanterior);
             this.GrbNavegacion.Controls.Add(this.Btnprimero);
+            this.GrbNavegacion.Font = new System.Drawing.Font("Maiandra GD", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.GrbNavegacion.Location = new System.Drawing.Point(24, 349);
             this.GrbNavegacion.Margin = new System.Windows.Forms.Padding(1);
             this.GrbNavegacion.Name = "GrbNavegacion";
@@ -179,7 +200,7 @@
             this.lblidvehiculo.AutoSize = true;
             this.lblidvehiculo.Location = new System.Drawing.Point(88, 26);
             this.lblidvehiculo.Name = "lblidvehiculo";
-            this.lblidvehiculo.Size = new System.Drawing.Size(0, 13);
+            this.lblidvehiculo.Size = new System.Drawing.Size(0, 16);
             this.lblidvehiculo.TabIndex = 14;
             // 
             // lblnregistros
@@ -188,7 +209,7 @@
             this.lblnregistros.Location = new System.Drawing.Point(83, 26);
             this.lblnregistros.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.lblnregistros.Name = "lblnregistros";
-            this.lblnregistros.Size = new System.Drawing.Size(0, 13);
+            this.lblnregistros.Size = new System.Drawing.Size(0, 16);
             this.lblnregistros.TabIndex = 13;
             // 
             // Bbtnultimo
@@ -241,6 +262,7 @@
             this.grbEdicion.Controls.Add(this.BtnDelete);
             this.grbEdicion.Controls.Add(this.BtnModificar);
             this.grbEdicion.Controls.Add(this.BtnNuevo);
+            this.grbEdicion.Font = new System.Drawing.Font("Maiandra GD", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grbEdicion.Location = new System.Drawing.Point(286, 349);
             this.grbEdicion.Margin = new System.Windows.Forms.Padding(1);
             this.grbEdicion.Name = "grbEdicion";
@@ -296,35 +318,20 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(702, 343);
+            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button1.Location = new System.Drawing.Point(692, 343);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 63);
+            this.button1.Size = new System.Drawing.Size(85, 81);
             this.button1.TabIndex = 11;
-            this.button1.Text = "Volver al menu principal";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // lblTipo
-            // 
-            this.lblTipo.AutoSize = true;
-            this.lblTipo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTipo.Location = new System.Drawing.Point(26, 225);
-            this.lblTipo.Name = "lblTipo";
-            this.lblTipo.Size = new System.Drawing.Size(36, 13);
-            this.lblTipo.TabIndex = 22;
-            this.lblTipo.Text = "Tipo:";
-            // 
-            // TxtTipo
-            // 
-            this.TxtTipo.Location = new System.Drawing.Point(162, 225);
-            this.TxtTipo.Name = "TxtTipo";
-            this.TxtTipo.Size = new System.Drawing.Size(100, 20);
-            this.TxtTipo.TabIndex = 23;
             // 
             // Carro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.grbEdicion);

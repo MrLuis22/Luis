@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Cliente));
             this.GrbDatosCliente = new System.Windows.Forms.GroupBox();
             this.txtdui = new System.Windows.Forms.TextBox();
             this.txttelefono = new System.Windows.Forms.TextBox();
@@ -58,6 +59,8 @@
             // 
             // GrbDatosCliente
             // 
+            this.GrbDatosCliente.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("GrbDatosCliente.BackgroundImage")));
+            this.GrbDatosCliente.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.GrbDatosCliente.Controls.Add(this.txtdui);
             this.GrbDatosCliente.Controls.Add(this.txttelefono);
             this.GrbDatosCliente.Controls.Add(this.TxtDireccion);
@@ -154,12 +157,14 @@
             // 
             // GrbNavegacion
             // 
+            this.GrbNavegacion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.GrbNavegacion.Controls.Add(this.lblidcliente);
             this.GrbNavegacion.Controls.Add(this.lblnregistros);
             this.GrbNavegacion.Controls.Add(this.Bbtnultimo);
             this.GrbNavegacion.Controls.Add(this.Btnsiguiente);
             this.GrbNavegacion.Controls.Add(this.Btnanterior);
             this.GrbNavegacion.Controls.Add(this.Btnprimero);
+            this.GrbNavegacion.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.GrbNavegacion.Location = new System.Drawing.Point(28, 346);
             this.GrbNavegacion.Margin = new System.Windows.Forms.Padding(1);
             this.GrbNavegacion.Name = "GrbNavegacion";
@@ -174,7 +179,7 @@
             this.lblidcliente.AutoSize = true;
             this.lblidcliente.Location = new System.Drawing.Point(88, 26);
             this.lblidcliente.Name = "lblidcliente";
-            this.lblidcliente.Size = new System.Drawing.Size(0, 13);
+            this.lblidcliente.Size = new System.Drawing.Size(0, 18);
             this.lblidcliente.TabIndex = 14;
             // 
             // lblnregistros
@@ -183,7 +188,7 @@
             this.lblnregistros.Location = new System.Drawing.Point(83, 26);
             this.lblnregistros.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.lblnregistros.Name = "lblnregistros";
-            this.lblnregistros.Size = new System.Drawing.Size(0, 13);
+            this.lblnregistros.Size = new System.Drawing.Size(0, 18);
             this.lblnregistros.TabIndex = 13;
             // 
             // Bbtnultimo
@@ -232,25 +237,27 @@
             // 
             // grbEdicion
             // 
+            this.grbEdicion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.grbEdicion.Controls.Add(this.BtnBuscar);
             this.grbEdicion.Controls.Add(this.BtnDelete);
             this.grbEdicion.Controls.Add(this.BtnModificar);
             this.grbEdicion.Controls.Add(this.BtnNuevo);
-            this.grbEdicion.Location = new System.Drawing.Point(316, 346);
+            this.grbEdicion.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grbEdicion.Location = new System.Drawing.Point(297, 333);
             this.grbEdicion.Margin = new System.Windows.Forms.Padding(1);
             this.grbEdicion.Name = "grbEdicion";
             this.grbEdicion.Padding = new System.Windows.Forms.Padding(1);
-            this.grbEdicion.Size = new System.Drawing.Size(236, 57);
+            this.grbEdicion.Size = new System.Drawing.Size(301, 107);
             this.grbEdicion.TabIndex = 9;
             this.grbEdicion.TabStop = false;
-            this.grbEdicion.Text = "Edicion de Categroias";
+            this.grbEdicion.Text = "Edicion de Categorias";
             // 
             // BtnBuscar
             // 
-            this.BtnBuscar.Location = new System.Drawing.Point(171, 16);
+            this.BtnBuscar.Location = new System.Drawing.Point(163, 32);
             this.BtnBuscar.Margin = new System.Windows.Forms.Padding(1);
             this.BtnBuscar.Name = "BtnBuscar";
-            this.BtnBuscar.Size = new System.Drawing.Size(62, 33);
+            this.BtnBuscar.Size = new System.Drawing.Size(76, 33);
             this.BtnBuscar.TabIndex = 4;
             this.BtnBuscar.Text = "Buscar";
             this.BtnBuscar.UseVisualStyleBackColor = true;
@@ -258,10 +265,10 @@
             // 
             // BtnDelete
             // 
-            this.BtnDelete.Location = new System.Drawing.Point(109, 16);
+            this.BtnDelete.Location = new System.Drawing.Point(163, 72);
             this.BtnDelete.Margin = new System.Windows.Forms.Padding(1);
             this.BtnDelete.Name = "BtnDelete";
-            this.BtnDelete.Size = new System.Drawing.Size(62, 33);
+            this.BtnDelete.Size = new System.Drawing.Size(88, 33);
             this.BtnDelete.TabIndex = 4;
             this.BtnDelete.Text = "Eliminar";
             this.BtnDelete.UseVisualStyleBackColor = true;
@@ -269,10 +276,10 @@
             // 
             // BtnModificar
             // 
-            this.BtnModificar.Location = new System.Drawing.Point(45, 16);
+            this.BtnModificar.Location = new System.Drawing.Point(11, 72);
             this.BtnModificar.Margin = new System.Windows.Forms.Padding(1);
             this.BtnModificar.Name = "BtnModificar";
-            this.BtnModificar.Size = new System.Drawing.Size(62, 33);
+            this.BtnModificar.Size = new System.Drawing.Size(91, 33);
             this.BtnModificar.TabIndex = 3;
             this.BtnModificar.Text = "Modificar";
             this.BtnModificar.UseVisualStyleBackColor = true;
@@ -280,10 +287,10 @@
             // 
             // BtnNuevo
             // 
-            this.BtnNuevo.Location = new System.Drawing.Point(2, 16);
+            this.BtnNuevo.Location = new System.Drawing.Point(10, 32);
             this.BtnNuevo.Margin = new System.Windows.Forms.Padding(1);
             this.BtnNuevo.Name = "BtnNuevo";
-            this.BtnNuevo.Size = new System.Drawing.Size(40, 33);
+            this.BtnNuevo.Size = new System.Drawing.Size(72, 33);
             this.BtnNuevo.TabIndex = 2;
             this.BtnNuevo.Text = "Nuevo";
             this.BtnNuevo.UseVisualStyleBackColor = true;
@@ -291,11 +298,12 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(691, 347);
+            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button1.Location = new System.Drawing.Point(676, 347);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 63);
+            this.button1.Size = new System.Drawing.Size(90, 91);
             this.button1.TabIndex = 10;
-            this.button1.Text = "Volver al menu principal";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -303,6 +311,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.grbEdicion);
